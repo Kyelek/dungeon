@@ -1,0 +1,13 @@
+@font-face {
+    font-family:'Dungeon';
+    src: url('/Game/src/resources/Fonts/DUNGRG__.TTF');
+}
+
+.banner{
+    font-family: 'Dungeon';
+    width: 100%;
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { LobbyComponent } from '../lobby/lobby.component';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -8,14 +9,29 @@ import { Component, OnInit } from '@angular/core';
 
 export class InicioComponent implements OnInit {
 
-  constructor(){}
+  private componenteLobby: LobbyComponent = new LobbyComponent();
+  private audio = new Audio('../../assets/musica/medieval-inicio.mp3');
+  
+  constructor(private router :Router){}
 
   ngOnInit(){
-
-    let audio = new Audio('../../assets/musica/medieval-inicio.mp3');
-    audio.loop = true;
-    //audio.play();     // ACTIVAR PARA QUE LA MUSICA EMPIECE
+    this.sound();
+    
   }
 
+   sound(){
+    
+    this.audio.loop = true;
+    this.audio.play();     // ACTIVAR PARA QUE LA MUSICA EMPIECE
+  }
+
+  setMusicVolume(volume: number){
+    this.audio.volume = volume;
+  }
+  empezarGame(){
+    this.router.navigate(['/lobby']);
+    this.setMusicVolume(0.3);
+    this.componenteLobby.narrador();
+  }
 
 }

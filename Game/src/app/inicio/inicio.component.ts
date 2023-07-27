@@ -9,7 +9,7 @@ import { LobbyComponent } from '../lobby/lobby.component';
 
 export class InicioComponent implements OnInit {
 
-  private componenteLobby: LobbyComponent = new LobbyComponent();
+  private componenteLobby: LobbyComponent = new LobbyComponent(this.router);
   private audio = new Audio('../../assets/musica/medieval-inicio.mp3');
   
   constructor(private router :Router){}
@@ -33,5 +33,5 @@ export class InicioComponent implements OnInit {
     this.setMusicVolume(0.3);
     this.componenteLobby.narrador();
   }
-
+ 
 }

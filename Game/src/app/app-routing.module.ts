@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
 import { LobbyComponent } from './lobby/lobby.component';
+import { PrimeraPantallaComponent } from './primera-pantalla/primera-pantalla.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,13 @@ const routes: Routes = [
   {
     path: 'lobby',
     component: LobbyComponent
-  }
+  },
+  {
+    path: 'primeraPantalla',
+    component: PrimeraPantallaComponent
+  },
+    
+    
 ];
 
 @NgModule({

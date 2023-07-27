@@ -1,0 +1,39 @@
+.contenedorPrimeraPantalla {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+.primeraPantalla{
+    width: 100%;
+    margin-bottom: 10%;
+    height: 80%;
+    margin-right: 10%;
+    margin-left: 5%;
+  
+}
+.cajaAcertijo{
+    height: 18%;
+    margin-bottom: 1%;
+    border: 1px, solid, blueviolet;
+    width: 100%;
+    background-color: rgba(71, 37, 117, 0.652);
+    position: absolute;
+    bottom: 0;
+    /*
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    */
+
+}
+.acertijo1{
+    text-align: center;
+}

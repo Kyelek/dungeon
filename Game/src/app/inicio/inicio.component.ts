@@ -20,9 +20,9 @@ export class InicioComponent implements OnInit {
   }
 
    sound(){
-    
     this.audio.loop = true;
     this.audio.play();     // ACTIVAR PARA QUE LA MUSICA EMPIECE
+    //console.log("its works?");
   }
 
   setMusicVolume(volume: number){

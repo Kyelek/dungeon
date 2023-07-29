@@ -24,9 +24,9 @@
   align-items: center;
   justify-content: center;
   box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.504),
-  -6px 6px 10px -1px rgb(255, 255, 255),
-  6px -6px 10px -1px rgba(252, 252, 252, 0.419),
-  -6px -6px 10px -1px rgba(255, 255, 255, 0.419);
+    -6px 6px 10px -1px rgb(255, 255, 255),
+    6px -6px 10px -1px rgba(252, 252, 252, 0.419),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.419);
 }
 
 .parrafo-introduccion {
@@ -48,12 +48,11 @@
   color: bisque;
   font-weight: bold;
 }
-  .boton-jugar:hover{
-    background-color: coral;
 
-  }
+.boton-jugar:hover {
+  background-color: coral;
 
-
+}
 
 .imagenentrada {
   margin-bottom: 10%;

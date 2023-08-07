@@ -10,7 +10,7 @@ export class LobbyComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
 
 
 

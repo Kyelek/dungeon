@@ -8,17 +8,18 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
+}
 
-.primeraPantalla{
+.primeraPantalla {
     width: 100%;
     margin-bottom: 10%;
     height: 80%;
     margin-right: 10%;
     margin-left: 5%;
-  
+
 }
-.cajaAcertijo{
+
+.cajaAcertijo {
     height: 18%;
     margin-bottom: 1%;
     border: 1px, solid, blueviolet;
@@ -34,6 +35,25 @@
     */
 
 }
-.acertijo1{
+
+.acertijo1 {
     text-align: center;
+    color: bisque;
+}
+
+.radioButton1 {
+    margin-left: 2%;
+}
+
+.buttonPrimeraPuerta {
+    margin-left: 3%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    color: bisque;
+    font-weight: bold;
+}
+
+.buttonPrimeraPuerta:hover {
+    background-color: coral;
 }

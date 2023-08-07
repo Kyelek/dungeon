@@ -15,14 +15,14 @@ export class InicioComponent implements OnInit {
   constructor(private router :Router){}
 
   ngOnInit(){
-    this.sound();
+    // this.sound(); // ACTIVAR PARA QUE LA MUSICA EMPIECE
     
   }
 
    sound(){
     this.audio.loop = true;
-    this.audio.play();     // ACTIVAR PARA QUE LA MUSICA EMPIECE
-    //console.log("its works?");
+    this.audio.play();     
+    console.log("its works?");
   }
 
   setMusicVolume(volume: number){

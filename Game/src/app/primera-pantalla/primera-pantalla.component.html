@@ -7,26 +7,58 @@
 <footer>
   <div class="cajaAcertijo">
     <div class="acertijo1">
-      <p> <!-- Pasar este texto a que lo lea la maquina-->
+      <p>
+        <!-- Pasar este texto a que lo lea la maquina-->
         Para poder abrir la puerta deberás descifrar el acertijo, si fallas
         atente a las consecuencias...
       </p>
-      
-      <p>Tiene ojos pero no ve, tiene llave pero no abre. ¿Qué es?</p><br>
+
+      <p>Tiene ojos pero no ve, tiene llave pero no abre. ¿Qué es?</p>
+      <br />
       <div class="respuestas">
+        <input
+          class="radioButton1"
+          value="unojo"
+          type="radio"
+          id="ojo"
+          name="respuestas1"
+          [(ngModel)]="opcionSeleccionada"
+        />
+        <label for="ojo"> Un ojo</label>
+        <input
+          class="radioButton1"
+          type="radio"
+          id="candado"
+          value="uncadado"
+          name="respuestas1"
+          [(ngModel)]="opcionSeleccionada"
+        />
+        <label for="candado">Un candado</label>
+        <input
+          class="radioButton1"
+          type="radio"
+          value="unacerradura"
+          id="cerradura"
+          name="respuestas1"
+          [(ngModel)]="opcionSeleccionada"
+        />
+        <label for="cerradura">Una cerradura</label>
+        <input
+          class="radioButton1"
+          type="radio"
+          id="puerta"
+          value="unapuerta"
+          name="respuestas1"
+          [(ngModel)]="opcionSeleccionada"
+        />
+        <label for="puerta">Una puerta</label>
         <!--
-            Aqui van 4 posibles respuestas!
-
-            1) un ojo
-            2) un candado abierto
-            3) una cerradura
-            4) una puerta
-
             cuando selecciones la respuesta incorrecta el que haya contestado mal sufrira los efectos del aura de la corona de las sombras y sufrira el castigo que le indique el otro jugador
             
         -->
-      </div>
 
+        <button (click)="respuestaCorrecta()" class="buttonPrimeraPuerta">Abrir Puerta</button>
+      </div>
     </div>
   </div>
 </footer>

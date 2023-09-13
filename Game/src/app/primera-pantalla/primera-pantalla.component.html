@@ -4,7 +4,7 @@
     src="../../assets/imagenes/primeraPantalla.jpg"
   />
 </div>
-<footer>
+<footer> 
   <div class="cajaAcertijo">
     <div class="acertijo1">
       <p>
@@ -57,7 +57,8 @@
             
         -->
 
-        <button (click)="respuestaCorrecta()" class="buttonPrimeraPuerta">Abrir Puerta</button>
+        <button [name]="respuestaSeleccionada" (click)="respuestaCorrecta()" class="buttonPrimeraPuerta">Abrir Puerta</button>
+        <button [name]="respuestaSeleccionada" *ngIf="respuestaSeleccionada == false" (click)="segundaPantalla()" class="buttonPrimeraPuerta" >Seguir Adelante</button>
       </div>
     </div>
   </div>

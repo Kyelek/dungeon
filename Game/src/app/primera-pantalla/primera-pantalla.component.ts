@@ -8,9 +8,11 @@ import { Router } from '@angular/router';
 })
 export class PrimeraPantallaComponent implements OnInit {
 
-  constructor(){}
+
+  constructor(private router: Router){}
 
   opcionSeleccionada: string = ' ';
+  respuestaSeleccionada: boolean = true;
 
   ngOnInit(): void {
       
@@ -26,6 +28,10 @@ export class PrimeraPantallaComponent implements OnInit {
     }else{
       alert("el jugador X ha perdido 1 punto de vida y la puerta se ha abierto");
     }
+    this.respuestaSeleccionada = false;
+  }
+  segundaPantalla(){
+    this.router.navigate(['/segundaPantalla']);
   }
 
 

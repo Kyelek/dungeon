@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LobbyComponent } from './lobby/lobby.component';
 import { PrimeraPantallaComponent } from './primera-pantalla/primera-pantalla.component';
+import { SegundaPantallaComponent } from './segunda-pantalla/segunda-pantalla.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     LobbyComponent,
-    PrimeraPantallaComponent
+    PrimeraPantallaComponent,
+    SegundaPantallaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,42 @@
+<div class = "contenedorSegundaPantalla">
+    <img
+    class="SegundaPantalla"
+    src="../../assets/imagenes/combate.jpg"
+    >
+</div>
+<footer>
+    <div  class="cajaAccion">    
+        <div class="accion1">
+            <p>
+                Te has encontrado con unos enemigos al cruzar la puerta, que deseas hacer?
+            </p> 
+            <p *ngIf="accionSeleccionada == 'atacar'" >
+                Has atacado en valde, el enemigo te ha tirado al pecho una bomba y tienes que desactivarla o morir en el intento
+            </p> 
+            <p *ngIf="accionSeleccionada == 'huir'" >
+                Huir es de cobardes alimaña, el enemigo te ha tirado una bomba y tienes que desactivarla
+            </p> 
+            <div class="respuestas">
+                <input
+                    class="radiobutton1"
+                    value="huir"
+                    type="radio"
+                    id="huir"
+                    name="repuesta1"
+                    [(ngModel)]="accionSeleccionada"
+                />
+                <label for="huir">Huir</label>
+                <input
+                    class="radiobutton1"
+                    value="atacar"
+                    type="radio"
+                    id="atacar"
+                    name="repuesta1"
+                    [(ngModel)]="accionSeleccionada"
+                />
+                <label for="atacar">Atacar</label>
+            </div>
+            <button [name]="estadoRespuesta" (click)="accionRealizada()" class="buttonSegundaPuerta">continuar</button>
+        </div>
+    </div>
+</footer>

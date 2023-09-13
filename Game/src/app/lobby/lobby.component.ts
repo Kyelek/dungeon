@@ -17,7 +17,7 @@ export class LobbyComponent implements OnInit {
   }
 
    primeraPantalla(){
-    this.router.navigate(['/primeraPantalla']);
+    this.router.navigate(['/primeraPantalla']); 
    }
 
   private textoALeer = `En un bosque encantado, oculto entre la espesura, se alza un misterioso castillo en ruinas que resguarda un objeto de increíble poder: la Corona de las Sombras, capaz de conceder un deseo prohibido a quien logre posarla sobre su cabeza.

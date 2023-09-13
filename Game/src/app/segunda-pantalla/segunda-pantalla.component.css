@@ -1,4 +1,4 @@
-.contenedorPrimeraPantalla {
+.contenedorSegundaPantalla {
     position: absolute;
     right: 0;
     left: 0;
@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.primeraPantalla {
+.segundaPantalla {
     width: 100%; 
     margin-bottom: 10%;
     height: 80%;
@@ -18,25 +18,17 @@
     margin-left: 5%;
 
 }
-
-.cajaAcertijo {
+.cajaAccion {
     height: 18%;
     margin-bottom: 1%;
     border: 1px, solid, blueviolet;
     width: 100%;
-    background-color: rgba(71, 37, 117, 0.652);
+    background-color: rgba(72, 37, 117, 0.856);
     position: absolute;
     bottom: 0;
-    /*
-    padding: 5%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    */
 
 }
-
-.acertijo1 {
+.accion1 {
     text-align: center;
     color: bisque;
 }
@@ -44,8 +36,7 @@
 .radioButton1 {
     margin-left: 2%;
 }
-
-.buttonPrimeraPuerta {
+.buttonSegundaPuerta {
     margin-left: 3%;
     padding: 5px;
     border-radius: 10px;
@@ -54,6 +45,6 @@
     font-weight: bold;
 }
 
-.buttonPrimeraPuerta:hover {
+.buttonSegundaPuerta:hover {
     background-color: coral;
 }

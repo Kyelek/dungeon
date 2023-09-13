@@ -15,7 +15,7 @@ export class InicioComponent implements OnInit {
   constructor(private router :Router){}
 
   ngOnInit(){
-    // this.sound(); // ACTIVAR PARA QUE LA MUSICA EMPIECE
+    this.sound(); // ACTIVAR PARA QUE LA MUSICA EMPIECE
     
   }
 
